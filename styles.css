@@ -6,7 +6,7 @@
 
 .test{
     background-color: red;
-    height: 150px;
+    height: fit-content;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -17,9 +17,17 @@
 .test div{
     width: 100%;
 }
-
+.roads{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+}
+.jobs{
+    display: grid;
+    grid-template-rows: repeat(6,1fr);
+    gap: 100px;
+}
 .road{
-    height: 150px;
+    height: 125px;
     width: 100%;
     margin: auto;
     border-top: black 20px solid;
@@ -30,6 +38,27 @@
 .two{
     border-top:0;
     border-bottom: black 20px solid;
-    border-right: black 20px solid;
     border-radius: 0  0 200px 0;
+
+}
+
+.three{
+    border-top: black 20px solid;
+    border-left: black 20px solid;
+    border-radius:200px  0  0 0;
+    border-right: 0;
+}
+
+.four{
+    border-top:0;
+    border-right:0;
+    border-bottom: black 20px solid;
+    border-left: black 20px solid;
+    border-radius:   0 0 0 200px;
+}
+
+.ex{
+    height: 150px;
+    width: 100%;
+    background-color: aliceblue;
 }
