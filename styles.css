@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.test{
+    background-color: red;
+    height: 150px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.test div{
+    width: 100%;
+}
+
+.road{
+    height: 150px;
+    width: 100%;
+    margin: auto;
+    border-top: black 20px solid;
+    border-right: black 20px solid;
+    border-radius: 0 200px 0 0;
+}
+
+.two{
+    border-top:0;
+    border-bottom: black 20px solid;
+    border-right: black 20px solid;
+    border-radius: 0  0 200px 0;
+}
