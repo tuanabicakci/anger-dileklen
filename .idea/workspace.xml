@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d485bf44-0d75-448b-9ed5-8a7e435ac98d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Fonts/Formula1-Bold.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fonts/Formula1-Regular.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fonts/Formula1-Wide.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Images/anger-hero-picture.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
@@ -37,13 +41,19 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/bicak/Desktop/anger-dileklen",
+    "last_opened_file_path": "C:/Users/bicak/Desktop/tuana-portfolio",
     "list.type.of.created.stylesheet": "CSS",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\bicak\Desktop\anger-dileklen\Fonts" />
+      <recent name="C:\Users\bicak\Desktop\anger-dileklen\Images" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -54,7 +64,7 @@
       <updated>1734893520759</updated>
       <workItem from="1734893522462" duration="2435000" />
       <workItem from="1734896903601" duration="2243000" />
-      <workItem from="1734904535480" duration="1215000" />
+      <workItem from="1734904535480" duration="6293000" />
     </task>
     <servers />
   </component>
