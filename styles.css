@@ -38,12 +38,19 @@
     --space-l-900:4.5rem;
 
     /*border radius*/
-    --border-radius:4px;
+    --border-radius:15px;
 
 
 
     min-height: 100vh;
 
+}
+
+h2{
+    font-family: "Doppio One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: var(--space-m-400);
 }
 
 /*FONTS*/
@@ -80,8 +87,6 @@
 body{
     margin: auto;
     background: #000;
-    max-width: 1440px;
-    padding: var(--space-m-500) var(--space-l-900);
     color: #fff;
 }
 
@@ -91,6 +96,8 @@ body{
     grid-template-columns: repeat(2,1fr);
     justify-items: center;
     align-items: center;
+    margin: var(--space-l-800) 0;
+    padding: var(--space-m-500) var(--space-l-900);
 }
 
 .hero h1{
@@ -121,6 +128,9 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: #111;
+    padding: var(--space-m-500) var(--space-l-900);
+    width: 100%;
 }
 
 .experience-road-grid{
@@ -132,37 +142,50 @@ body{
     align-items: center;
 }
 
+.exp{
+
+}
 .test div{
     width: 100%;
 }
 .roads{
     display: grid;
-    grid-template-rows: repeat(3,1fr);
+    grid-template-rows: repeat(6,1fr);
 }
 .jobs{
     display: grid;
     grid-template-rows: repeat(6,1fr);
-    gap: 100px;
+    gap: 120px;
 }
 .road{
-    height: 125px;
+    height: 130px;
     width: 100%;
     margin: auto;
-    border-top: black 20px solid;
-    border-right: black 20px solid;
+    border-top: white 20px solid;
+    border-right: white 20px solid;
     border-radius: 0 200px 0 0;
+}
+
+
+
+.straight{
+    width: 100%;
+    margin: auto;
+    border-top: white 20px solid;
+    border-right: 0;
+    border-radius: 0;
 }
 
 .two{
     border-top:0;
-    border-bottom: black 20px solid;
+    border-bottom: white 20px solid;
     border-radius: 0  0 200px 0;
 
 }
 
 .three{
-    border-top: black 20px solid;
-    border-left: black 20px solid;
+    border-top: white 20px solid;
+    border-left: white 20px solid;
     border-radius:200px  0  0 0;
     border-right: 0;
 }
@@ -170,13 +193,57 @@ body{
 .four{
     border-top:0;
     border-right:0;
-    border-bottom: black 20px solid;
-    border-left: black 20px solid;
+    border-bottom: white 20px solid;
+    border-left: white 20px solid;
     border-radius:   0 0 0 200px;
 }
 
-.ex{
-    height: 150px;
+.exp {
+    height: 200px;
     width: 100%;
-    background-color: aliceblue;
+    background: url("Images/ferrari-f2002,.jpg") no-repeat;
+    background-size: cover;
+    border-radius: var(--border-radius);
+    padding: var(--space-s-100);
+
+}
+
+.exp-content{
+    height: 100%;
+    width: 100%;
+    border-right: #fff solid 3px;
+    border-top: #fff solid 3px;
+    border-radius: 0 var(--border-radius) 0 var(--border-radius);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-s-200);
+}
+
+.exp-content img{
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+
+}
+
+.exp-content h3{
+    font-family: Formula1;
+    font-weight: normal;
+    font-weight: 400;
+}
+
+.exp-content:before {
+    content: "";
+    position: absolute; /* Position pseudo-element over the parent */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(135deg, transparent 25%, #fff 25%, #fff 50%, transparent 50%, transparent 75%, #fff 75%, #fff);
+    background-size: 11.31px 11.31px;
+    opacity: 0.1; /* Adjust opacity for visibility */
+     /* Ensure this layers above the background */
 }
