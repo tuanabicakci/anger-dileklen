@@ -151,57 +151,36 @@ body{
 .roads{
     display: grid;
     grid-template-rows: repeat(6,1fr);
+    align-items: center;
+    gap:120px;
+
 }
 .jobs{
     display: grid;
     grid-template-rows: repeat(6,1fr);
-    gap: 120px;
+    gap: 100px;
+}
+
+.road-container{
+    height: 200px;
+    display: flex;
+    align-items: center;
 }
 .road{
-    height: 130px;
+    height: 80px;
     width: 100%;
     margin: auto;
     border-top: white 20px solid;
-    border-right: white 20px solid;
-    border-radius: 0 200px 0 0;
+    background: red;
 }
 
 
 
-.straight{
-    width: 100%;
-    margin: auto;
-    border-top: white 20px solid;
-    border-right: 0;
-    border-radius: 0;
-}
-
-.two{
-    border-top:0;
-    border-bottom: white 20px solid;
-    border-radius: 0  0 200px 0;
-
-}
-
-.three{
-    border-top: white 20px solid;
-    border-left: white 20px solid;
-    border-radius:200px  0  0 0;
-    border-right: 0;
-}
-
-.four{
-    border-top:0;
-    border-right:0;
-    border-bottom: white 20px solid;
-    border-left: white 20px solid;
-    border-radius:   0 0 0 200px;
-}
 
 .exp {
     height: 200px;
     width: 100%;
-    background: url("Images/ferrari-f2002,.jpg") no-repeat;
+    background: black;
     background-size: cover;
     border-radius: var(--border-radius);
     padding: var(--space-s-100);
@@ -218,21 +197,56 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding: var(--space-s-100);
+    padding-top: var(--space-m-400);
     align-items: center;
     gap: var(--space-s-200);
 }
 
 .exp-content img{
     border-radius: 100%;
-    width: 100%;
-    height: 100%;
+    position: absolute;
+    top:-50%;
+    left:50%;
+    transform: translate(-50%,0);
+    width: 120px;
+    height: 120px;
+    border: #000 solid 3px;
 
 }
 
-.exp-content h3{
+.exp-information{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-s-100);
+}
+
+.exp-information h3{
     font-family: Formula1;
     font-weight: normal;
     font-weight: 400;
+    font-size: var(--space-s-300);
+
+}
+
+.exp-information span{
+    background: rgb(225,6,0);
+    padding:var(--space-s-100);
+    border-radius: var(--border-radius);
+    font-family: "Doppio One", serif;
+    font-weight: 400;
+    font-style: normal;
+    width: fit-content;
+}
+
+.exp-information p{
+    font-family: "Doppio One", serif;
+    font-weight: 400;
+    font-style: normal;
+    width: fit-content;
+    text-align: center;
 }
 
 .exp-content:before {
