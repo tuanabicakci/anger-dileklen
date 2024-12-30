@@ -92,6 +92,24 @@ body{
     color: #fff;
 }
 
+nav{
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+
+}
+
+.navbar-container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: var(--space-s-100) 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
 h2{
     font-family: 'Formula1';
     font-weight: 700; /* Normal weight */
