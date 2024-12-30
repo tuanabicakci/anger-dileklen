@@ -16,9 +16,10 @@
     --gray-300:#909090;
     --gray-400:#636363;
     --gray-500:#494848;
-    --color-primary: #8393ED;
-    --color-secondary: #B684E7;
-    --color-tertiary: #28B4B2;
+    --color-primary:#000;
+    --color-secondary: #0a0a0a;
+    --color-tertiary: #1b1b1b;
+    --color-accent: #F62C2C;
     --color-secondary-variant:#FAA8F6 ;
     --color-tertiary-variant: #97ECC7;
 
@@ -38,7 +39,8 @@
     --space-l-900:4.5rem;
 
     /*border radius*/
-    --border-radius:15px;
+    --border-radius-s:4px ;
+    --border-radius-b:16px;
 
 
 
@@ -90,37 +92,162 @@ body{
     color: #fff;
 }
 
-.hero{
+h2{
+    font-family: 'Formula1';
+    font-weight: 700; /* Normal weight */
+    font-style: normal; /* Normal style */
+    font-stretch: normal; /* Standard width */
+    font-size: 36px;
+}
+
+.hero-wrapper{
+    background: url("/Images/hero-bg-2.png") no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
+#hero{
     width: 100%;
+    height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     justify-items: center;
     align-items: center;
-    margin: var(--space-l-800) 0;
-    padding: var(--space-m-500) var(--space-l-900);
+    padding: var(--space-m-500) 0;
+    padding-bottom: 0;
 }
 
-.hero h1{
-    font-size: var(--space-l-800);
+#hero h1{
     font-family: 'Formula1';
     font-weight: 400;
     font-stretch: expanded;
-
-
+    font-size: var(--space-l-700);
 }
 
-.hero a{
+.links a{
     font-family: "Doppio One", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: var(--space-m-400);
+    font-size: var(--space-s-300);
     text-decoration: none;
     color: #fff;
+    display: inline-block;
+
+}
+
+#hero-content{
+    margin-left:-100px ;
+
 }
 
 .links{
     display: flex;
     gap: var(--space-s-200);
+
+}
+
+.links a:nth-child(1){
+    background: var(--color-accent);
+    text-align: center;
+    padding: 12px;
+    width: 150px;
+    border-radius: var(--border-radius-s);
+}
+.links i{
+    font-size: var(--space-s-300);
+    display: inline-block;
+}
+.experience-wrapper{
+    background: var(--color-secondary);
+}
+
+.experience{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding: var(--space-m-600) 0;
+    gap: 36px;
+}
+.jobs{
+
+    height: fit-content;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: repeat(6,1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 140px;
+}
+
+.logos{
+    display: grid;
+    grid-template-rows: repeat(6,1fr);
+    gap: 140px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.job{
+    display: grid;
+    grid-template-columns: 5fr 2fr 5fr;
+    gap: 40px;
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.job img{
+    border-radius: 100%;
+}
+
+.job-description{
+    background: var(--color-tertiary);
+    padding: var(--space-m-400);
+    border-radius: var(--border-radius-b);
+    width: 100%;
+    position: relative;
+}
+
+.job hr{
+    margin-bottom: -10px;
+}
+
+.job span{
+    background: var(--color-tertiary);
+    padding: var(--space-s-100);
+    margin-left: 5px;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+}
+
+.job h3{
+    font-family: 'Formula1';
+    background: var(--color-accent);
+    width: fit-content;
+    padding: var(--space-s-100);
+    border-radius: var(--border-radius-b);
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.job p{
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 10px;
+    font-size: 16px;
 }
 
 .experience-container{
@@ -128,19 +255,12 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #111;
+    background: #fff;
     padding: var(--space-m-500) var(--space-l-900);
     width: 100%;
 }
 
-.experience-road-grid{
-    height: fit-content;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    justify-content: center;
-    align-items: center;
-}
+
 
 .exp{
 
@@ -155,11 +275,7 @@ body{
     gap:120px;
 
 }
-.jobs{
-    display: grid;
-    grid-template-rows: repeat(6,1fr);
-    gap: 100px;
-}
+
 
 .road-container{
     height: 200px;
