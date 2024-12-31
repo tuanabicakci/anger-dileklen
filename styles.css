@@ -59,7 +59,7 @@ h2{
 /* Default Regular Version */
 @font-face {
     font-family: 'Formula1';
-    src: url('fonts/Formula1-Regular.otf') format('opentype');
+    src: url('../Fonts/Formula1-Regular.otf') format('opentype');
     font-weight: 400; /* Normal weight */
     font-style: normal; /* Normal style */
     font-stretch: normal; /* Standard width */
