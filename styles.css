@@ -111,7 +111,7 @@ nav{
 }
 
 h2{
-    font-family: 'Formula1';
+    font-family: 'Formula1', serif;
     font-weight: 700; /* Normal weight */
     font-style: normal; /* Normal style */
     font-stretch: normal; /* Standard width */
@@ -181,6 +181,7 @@ h2{
 }
 .experience-wrapper{
     background: var(--color-secondary);
+    background: linear-gradient(0deg, var(--color-primary) 0%, var(--color-secondary) 100%);
 }
 
 .experience{
@@ -189,6 +190,7 @@ h2{
     justify-items: center;
     align-items: center;
     padding: var(--space-m-500) var(--space-s-300);
+    padding-bottom:var(--space-l-900) ;
     gap: 36px;
 }
 .jobs{
@@ -289,7 +291,7 @@ h2{
     flex-direction: column;
     justify-items: center;
     align-items: center;
-    padding: var(--space-m-600) 0;
+    padding: var(--space-m-500) 0;
     gap: 36px;
 }
 .skills-grid-wrapper{
@@ -383,6 +385,15 @@ h2{
         margin-top: 10px;
         justify-content: center;
     }
+
+    .skill-grid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media only screen and (max-width: 778px) {
+
 }
 
 @media only screen and (min-width: 1800px) {
